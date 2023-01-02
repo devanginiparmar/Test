@@ -1,0 +1,386 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
+*/
+/*
+    Created on : Dec 19, 2022, 3:24:40 PM
+    Author     : MJohn
+*/
+/*datasets-accordion*/
+.datasets-accordion{
+    font-size: $font-size-medium;
+    .accordion-button{
+        background: $gray-200;
+        padding: 8px;
+        box-shadow: none;
+        font-size: $font-size-small;
+        color: $black;
+        font-weight: 600;
+        position: relative;
+        padding-left: 26px;
+        &.collapsed{
+            background: $white;
+        }
+    }
+    .accordion-header{
+        position: relative;
+
+        /*        border: 1px solid $gray-200;
+                border-bottom: none;*/
+        .checkbox-dataset{
+            position: absolute;
+            left: 6px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 50;
+        }
+    }
+    .accordion-body{
+        padding: 4px 12px;
+        height: 296px;
+        overflow: auto;
+    }
+
+}
+.configuration-input-datalist{
+    border: 1px solid $gray-200;
+    border-bottom: none;
+    font-size: $font-size-small;
+    .left-section{
+        background: $lighterskyblue;
+        border-bottom: 1px solid $gray-300;
+        font-size: $font-size-small;
+        padding: 4px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        .form-check-label{
+            font-size: $font-size-small;
+            cursor: pointer;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            position: relative;
+            top: 4px;
+            display: block;
+        }
+
+    }
+    .right-section{
+        background: $white;
+        font-size: $font-size-small;
+        border-bottom: 1px solid $gray-300;
+        padding: 4px;
+        position: relative;
+        .input-sm{
+            font-size: $font-size-small;
+            font-weight: 500;
+            color: $black;
+            &:disabled{
+                color: $gray-500;
+            }
+        }
+
+    }
+
+}
+/*datasets-accordion*/
+
+// .configurtion-panel{
+//     background: $white;
+//     border-top: 1px solid $gray-200;
+//     height:460px;
+//     position: absolute;
+//     bottom: 0px;
+//     width: calc(100% - 302px);
+//     padding-top: 36px;
+//     display: flex;
+//     box-shadow: -10px 0px 20px $gray-100;
+//     .configuration-panel-header{
+//         position: absolute;
+//         font-weight: 500;
+//         top: 0;
+//         font-size: $font-size-medium;
+//         display: flex;
+//         align-items: center;
+//         &.left-col{
+//             position: absolute;
+//             border-right: 1px solid $gray-200;
+//             padding: 8px 12px;
+//             width: 560px;
+//             .configuration-option-button{
+//                 border-radius: 16px;
+//                 top: 4px;
+//                 right: 6px;
+//                 position: absolute;
+//                 &:hover{
+//                     background: $brand-color-primary!important;
+//                     color: $white !important;
+//                 }
+//             }
+//         }
+//         &.right-col{
+//             position: absolute;
+//             left: 560px;
+//             min-width: calc(100% - 560px);
+//             padding: 8px 12px;
+//         }
+
+//     }
+//     .left-col-config-pane{
+//         min-width: 560px;
+//         border-top: 1px solid $gray-200;
+
+//         font-weight: 500;
+//         font-size: $font-size-medium;
+//         border-right: 1px solid $gray-200;
+//         position: relative;
+//         .config-pane-footer{
+//             width:100%;
+//             background: $white;
+//             position: absolute;
+//             bottom: 0px;
+//             border-top: 1px solid $gray-200;
+//             left: 0px;
+//         }
+//         &.split{
+//             display: flex;
+//             .config-pane-footer{
+//                 width: calc(100% - 160px);
+//                 left: 160px;
+
+//             }
+//         }
+//         .column-selection-pane{
+//             min-width: 160px;
+//             border-right: 1px solid $gray-200;
+//             height: 422px;
+//             overflow: auto;
+
+//         }
+//     }
+//     .right-col-preview-pane{
+//         border-top: 1px solid $gray-200;
+//         font-size: $font-size-medium;
+//         font-weight: 500;
+//         min-width: calc(100% - 560px);
+//         position: relative;
+
+//     }
+//     .configuration-panel-controls{
+//         position: absolute;
+//         right: 0px;
+//         top:8px;
+//         padding-right: 12px;
+//     }
+//     .configuration-controls-icon{
+//         cursor: pointer;
+//         opacity: .6;
+//         font-weight: normal;
+//         &:hover{
+//             opacity: 1;
+//             &::before{
+//                 font-weight: 700 !important;
+//             }
+//         }
+//     }
+//     &.secondary-sidebar-collapsed{
+//         width: calc(100% - 82px);
+//     }
+//     &.minimized{
+//         height:37px;
+//     }
+// }
+
+.dataset-accordion-draggable-field{
+    .accordion-header{
+        .accordion-button{
+            font-size: $font-size-small;
+            font-weight: 500;
+            padding: 4px;
+            background: $gray-300;
+            color:$black;
+            font-weight: bold;
+            border-radius: 0px;
+
+            &:focus{
+                box-shadow: none;
+            }
+            &.collapsed{
+                background: $white;
+                font-weight: 500;
+                background-image: none;
+            }
+        }
+        .accordion-button:not(.collapsed)::after {
+            background-image: var(--bs-accordion-btn-icon);
+            transform: var(--bs-accordion-btn-icon-transform);
+        }
+    }
+    .accordion-item{
+        border-radius: 0px;
+    }
+    .accordion-body{
+        padding: 4px;
+    }
+    .draggable-fields{
+        li{
+            font-size: $font-size-small;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            padding: 4px 0px;
+            cursor: move;
+            &:hover{
+                background: $gray-200;
+            }
+        }
+        .bi-arrows-move{
+            font-size: $font-size-small;
+            margin-right: 6px;
+        }
+    }
+}
+.operations-pane{
+    width: 100%;
+    height: 370px;
+    background: $white;
+    overflow: auto;
+    .number-of-operations{
+        display: flex;
+        font-size: $font-size-small;
+        label{
+            font-size: $font-size-small;
+        }
+        .number-of-operations-item{
+            li{
+                float: left;
+                margin-right: 2px;
+                font-size: $font-size-small;
+                width: 18px;
+                height: 18px;
+                background: $lighterskyblue;
+                text-align: center;
+                color: $black;
+                font-weight: 600;
+                line-height: 18px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+    }
+    .droppable-fields{
+        label{
+            font-size: $font-size-small;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+        .droppable-fields-input{
+            border: 1px dashed $gray-500;
+            font-size: $font-size-small;
+        }
+    }
+    .add-droppable-fields{
+        position: absolute;
+        bottom: -2px;
+        right: 10px;
+        font-size: 22px;
+        color: $brand-color-primary;
+        cursor: pointer;
+        &:hover{
+            color: $brand-color-primary-hover;
+        }
+    }
+    .join-type-config{
+        background: $lighterskyblue;
+        padding: 8px;
+        label{
+            font-size: $font-size-small;
+            margin-bottom: 2px;
+            font-weight: 500;
+        }
+        select{
+            font-size: $font-size-small;
+            font-weight: 500;
+        }
+        option{
+            font-size: $font-size-small;
+            font-weight: 500;
+        }
+        input{
+            font-size: $font-size-small;
+            font-weight: 500;
+        }
+    }
+}
+.operation-description{
+    font-size: $font-size-small;
+    padding: 4px;
+}
+.saved-successfully-message{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+}
+.saved-successfully-message-bg{
+    background: $green;
+    color: $white;
+    padding: 8px;
+    border-radius: 32px;
+    font-size: $font-size-medium;
+}
+.load-preview-wrapper{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-70% , -70%);
+    button{
+        font-size: $font-size-medium;
+    }
+    .preview-icon{
+        max-height: 100px;
+    }
+}
+.filter-wrapper{
+    border:1px solid $gray-300;
+    border-radius: 4px;
+    padding: 4px 8px 20px;
+    input, select,option{
+        font-size: $font-size-small;
+    }
+    .filter-checkbox{
+        label{
+            font-size: $font-size-small;
+            font-weight: 500;
+            margin-left: 4px;
+            cursor: pointer;
+        }
+        .form-check{
+            display: flex;
+            align-items: center;
+            margin-right: 8px;
+            cursor: pointer;
+            input{
+                position: relative;
+                top: -2px;
+            }
+        }
+    }
+    .add-filter{
+        position: absolute;
+        bottom: -6px;
+        left:50%;
+        transform: translateX(-50%);
+        display: block;
+        width: 22px;
+        height: 22px;
+        background: $white;
+        cursor: pointer;
+        .bi-plus-circle{
+            font-size: 22px;
+            color: $brand-color-primary;
+        }
+    }
+}

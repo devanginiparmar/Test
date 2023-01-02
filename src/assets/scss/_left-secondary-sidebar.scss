@@ -1,0 +1,84 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
+*/
+/*
+    Created on : Dec 9, 2022, 6:25:05 PM
+    Author     : MJohn
+*/
+
+// .left-secondary-sidebar{
+//     width:220px;
+//     background: $white;
+//     position: fixed;
+//     top: 50px;
+//     left: 70px;
+//     height: calc(100% - 50px);
+//     box-shadow: 4px 0px 12px $gray-200;
+//     overflow: auto;
+//     z-index: 50;
+
+
+//     .menu-items-wrapper{
+//         display: flex;
+//         margin: 0;
+//         flex-flow: row wrap;
+//         .menu-items{
+//             min-width: 50%;
+//             margin: 16px 0px 8px;
+
+//             h6{
+//                 font-weight: 500;
+//                 font-size: $font-size-small;
+//                 margin-top: 4px;
+//                 margin-bottom: 0px;
+//                 font-size: $font-size-small;
+//             }
+//             span{
+//                 display: block;
+//                 width: 40px;
+//                 height: 40px;
+//                 background: $gray-200;
+//                 border-radius: 50%;
+//                 text-align: center;
+//                 line-height: 40px;
+//                 margin: 0 auto;
+//                 .menu-items-icon{
+//                     max-height: 20px;
+//                 }
+//                 &:hover{
+//                     background: $gray-300;
+//                 }
+//             }
+//         }
+//     }
+//     &.secondary-sidebar-collapsed{
+//         width:0px;
+//         overflow: hidden;
+//     }
+// }
+// .collapsible-bar{
+//     position: fixed;
+//     left: 289px;
+//     top: 50px;
+//     height: 100%;
+//     border-left: 1px solid $gray-300;
+//     border-right: 1px solid $gray-300;
+//     width: 12px;
+//     background: $white;
+//     .left-secondary-sidebar-collapsible-icon{
+//         position: absolute;
+//         top: 50%;
+//         right: 4px;
+//         transform: translateY(-50%);
+//         width: 12px;
+//         color: $gray-700;
+//     }
+//     &:hover{
+//         background: darken($white ,2.5%);
+//     }
+//     &.secondary-sidebar-collapsed{
+//         left: 70px;
+
+//     }
+// }

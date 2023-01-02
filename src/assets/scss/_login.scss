@@ -1,0 +1,36 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
+*/
+/*
+    Created on : Dec 8, 2022, 12:23:04 PM
+    Author     : MJohn
+*/
+
+.login_wrapper{
+    max-width: 450px;
+    margin: 0 auto;
+    width: 450px;
+    .login_input{
+        border-radius: 30px;
+        height: 46px;
+        line-height: 46px;
+    }
+}
+.login-button{
+    background: $brand-color-primary;
+    color: $white;
+    border-radius: 30px;
+    height: 52px;
+    font-weight: $font-weight-semibold;
+    &:hover{
+    background: $brand-color-primary-hover;    
+    }
+    
+}
+.btn-primary{
+    background: $brand-color-primary;    
+    &:hover{
+    background: $brand-color-primary-hover;    
+    }
+}

@@ -1,0 +1,433 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
+*/
+/*
+    Created on : Dec 8, 2022, 12:17:32 PM
+    Author     : MJohn
+*/
+
+input.form-control{
+    border: 1px solid $gray-500;
+    border-radius: 4px;
+}
+input.form-control::placeholder {
+
+    color:$gray-500;
+}
+textarea.form-control{
+    border: 1px solid $gray-500;
+}
+textarea.form-control::placeholder {
+
+    color:$gray-500;
+}
+.input-default{
+    border-radius: 4px;
+}
+.input-sm{
+    padding:.25rem ;
+    font-size: $font-size-medium;
+    height: 32px;
+}
+.input-md{
+    padding:8px 12px;
+    font-size: $font-size-medium;
+}
+.input-lg{
+
+}
+.form-label-md{
+    font-size:$font-size-medium;
+}
+.form-label-sm{
+    font-size:$font-size-small;
+}
+.form-select{
+    border: 1px solid $gray-500;
+    font-size: $font-size-medium;
+    option{
+        font-size: $font-size-medium;
+    }
+}
+.form-select-sm{
+    padding:.25rem 1.25rem .25rem .25rem;
+    font-size: $font-size-medium;
+    background-position: right .25rem center;
+    height: 32px;
+}
+.form-check-input:checked{
+    background-color: $brand-color-primary;
+    border-color: $brand-color-primary;
+}
+.input-icon-left{
+    padding-left: 30px;
+    border-top-left-radius: 4px !important;
+    border-bottom-left-radius: 4px !important;
+}
+// .search-component{
+//     .input-group-text.addon-left{
+//         background: $transparent;
+//         position: absolute;
+//         left: -4px;
+//         border: none;
+//         z-index: 10;
+//         top:-2px;
+//     }
+// }
+.components-accordion{
+    font-size: $font-size-small;
+    padding: 8px;
+    border-radius: 0px !important;
+    background: $gray-100;
+    font-weight: 500;
+    color: $gray-800;
+    &:not(.collapsed){
+        font-weight: bold;
+        background: $gray-200;
+        color: $gray-800;
+        &::after{
+            background-image:var(--bs-accordion-btn-icon);
+        }
+    }
+    &:focus{
+        box-shadow:0px 0px 2px $gray-400;
+    }
+}
+
+/*Plain Select*/
+.select-dropdown-plain {
+    position: relative;
+    background-color: $transparent;
+    width: auto;
+    float: left;
+    max-width: 100%;
+    border-radius: 2px;
+    border: none;
+    font-size: $font-size-medium;
+    select {
+
+        font-size: $font-size-medium;
+        max-width: 100%;
+        padding: 8px 24px 8px 10px;
+        border: none;
+        background-color: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        &:active,
+            &:focus {
+            outline: none;
+            color:var(--bs-body-color);
+            box-shadow: none;
+        }
+        option{
+            font-size: $font-size-medium;
+        }
+    }
+    &:after {
+        content: " ";
+        position: absolute;
+        top: 50%;
+        margin-top: -2px;
+        right: 8px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #aaa;
+    }
+}
+/*Plain Select*/
+
+.grid-view,.list-view{
+    width:36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    background: $white;
+    border:1px solid $gray-200;
+    border-radius: 4px;
+    padding: 4px 6px;
+    cursor: pointer;
+    &:hover{
+        background: $lighterblue;
+        border:1px solid $lightblue;
+        color: $skyblue;
+    }
+    &.active{
+        background: $lighterblue;
+        border:1px solid $lightblue;
+        color: $skyblue;
+    }
+}
+
+.workflows-wrapper{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/*Context Menu*/
+.context-menu{
+    float: left;
+    font-size: $font-size-medium;
+    .dropdown-menu{
+        position: absolute !important;
+        padding: 0px;
+        font-size: inherit;
+        background: $brand-color-primary;
+        border-radius: 6px;
+        li{
+            border-bottom: 1px solid rgba(255,255,255,0.25);
+            &:last-child{
+                border-bottom:none;
+            }
+        }
+
+    }
+    /* rotate caret on hover */
+    .dropdown-menu > li > a:after {
+        text-decoration: underline;
+        transform: rotate(-90deg);
+    }
+    .dropdown-menu > li > a:hover:after {
+        text-decoration: underline;
+        transform: rotate(-90deg);
+    }
+}
+.context-menu li:hover > ul.dropdown-menu {
+    display: block;
+    font-size: inherit;
+}
+.dropdown-submenu {
+    position:relative;
+    font-size: $font-size-medium;
+    a{
+        font-size: $font-size-medium;
+        padding: 8px 16px;
+        color: $white;
+
+        font-weight: 500;
+
+        &.first{
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+
+        }
+        &.last{
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+
+        }
+        &:hover{
+            background: $brand-color-primary-hover;
+            font-weight: 500;
+            color: $white;
+        }
+    }
+}
+.dropdown-submenu>.dropdown-menu {
+    top:0;
+    left:100%;
+    margin-top:0px;
+    li a{
+        font-size: $font-size-medium;
+    }
+}
+
+
+
+/*Context Menu*/
+
+/*file input*/
+[type="file"] {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+}
+
+input.load-dataset[type="file"] + label {
+
+    background:$white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    outline: none;
+    padding: .75rem 50px;
+    position: relative;
+    transition: all 0.3s;
+    vertical-align: middle;
+    border: 1px solid $brand-color-primary;
+    color: $brand-color-primary;
+    box-shadow: 0px 0px 6px lighten($common-gray , 20%);
+    &:hover,&:focus,&:active{
+        background:$white;
+
+        border: 1px solid $brand-color-primary-hover;
+        color: $brand-color-primary-hover  !important;
+        font-weight:500;
+        box-shadow: 0px 0px 24px lighten($common-gray , 10%);
+        ;
+    }
+
+}
+.load-dataset-modal{
+    border: 1px solid $gray-200;
+    border-radius: 6px;
+    background: $white;
+
+    .load-dataset-modal-header{
+        background: $lighterskyblue;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        display: flex;
+        h1{
+            font-size: $font-size-base;
+            font-weight: $font-weight-semibold;
+            margin-bottom: 0px;
+        }
+        .btn-close{
+            width: 16px;
+            height: 16px;
+            background-size: 12px;
+        }
+        .left-header{
+            padding: 12px;
+            border-right: 2px solid #dce1e7;
+            min-width: 240px;
+        }
+        .right-header{
+            padding: 12px;
+            font-size: $font-size-medium;
+            font-weight: 500;
+
+        }
+    }
+    .load-dataset-modal-body{
+        display: flex;
+        .dataset-list{
+            min-width: 240px;
+            overflow: auto;
+            height: calc(100vh - 200px);
+            border-right: 2px solid $gray-200;
+            padding: 16px;
+            font-size: $font-size-medium;
+            h6{
+                font-size: $font-size-medium;
+            }
+            .dataset-list-items{
+                li{
+                    font-size: $font-size-small;
+                    margin: 5px 0px;
+                    cursor: pointer;
+                    label{
+                        font-size: $font-size-small;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        .dataset-preview{
+            overflow: auto;
+            height: calc(100vh - 266px);
+            padding: 16px;
+            width: 100%;
+        }
+        .load-dataset-modal-footer{
+            padding: 16px;
+            border-top: 1px solid $gray-200;
+            width:calc(100% - 252px);
+            position: absolute;
+            bottom: 0px;
+
+        }
+    }
+
+}
+.load-dataset-modal-full{
+    border: 1px solid $gray-200;
+    border-radius: 6px;
+    background: $white;
+
+    .load-dataset-modal-header{
+        background: $lighterskyblue;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        display: flex;
+        h1{
+            font-size: $font-size-base;
+            font-weight: $font-weight-semibold;
+            margin-bottom: 0px;
+        }
+        .btn-close{
+            width: 16px;
+            height: 16px;
+            background-size: 12px;
+        }
+
+        .right-header{
+            padding: 12px;
+            font-size: $font-size-medium;
+            font-weight: 500;
+
+        }
+    }
+    .load-dataset-modal-body{
+        display: flex;
+        /*        .dataset-list{
+                     min-width: 240px;
+                    overflow: auto;
+                    height: calc(100vh - 200px);
+                    border-right: 2px solid $gray-200;
+                    padding: 16px;
+                    font-size: $font-size-medium;
+                    h6{
+                        font-size: $font-size-medium;
+                    }
+                    .dataset-list-items{
+                        li{
+                            font-size: $font-size-small;
+                            margin: 5px 0px;
+                            cursor: pointer;
+                            label{
+                                font-size: $font-size-small;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }*/
+        .dataset-preview{
+            overflow: auto;
+            height: calc(100vh - 286px);
+            padding: 16px;
+            width: 100%;
+        }
+        .load-dataset-modal-footer{
+            padding: 16px;
+            border-top: 1px solid $gray-200;
+            width:100%;
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            background: $white;
+
+        }
+    }
+
+}
+.custom-pagination{
+    li {
+        a{
+            font-size: $font-size-medium;
+        }
+    }
+}
+.card-shadowed{
+    background: $white;
+    box-shadow: 0px 0px 26px $gray-200;
+    border-radius: 4px;
+    padding: 16px;
+}

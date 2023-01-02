@@ -1,0 +1,105 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
+*/
+/*
+    Created on : Dec 8, 2022, 12:21:52 PM
+    Author     : MJohn
+*/
+.btn{
+    border-radius: 4px;
+    font-weight:500;
+
+}
+.btn-primary:disabled{
+    opacity: 0.25;
+    pointer-events: none;
+    background: $brand-color-primary;
+}
+.btn-outline-primary{
+    border: 1px solid $brand-color-primary;
+    color: $brand-color-primary;
+    font-weight:500;
+    &:hover,&:focus,&:active{
+        background: transparent !important;
+        border: 1px solid $brand-color-primary-hover;
+        color: $brand-color-primary-hover  !important;
+        font-weight:500;
+    }
+}
+.create-new-workflow-btn{
+    font-size: $font-size-medium;
+    background: $white;
+    box-shadow: 0px 0px 12px $gray-200;
+    font-weight: 600;
+    transition:all .65s;
+    border: 1px solid $brand-color-primary;
+    color: $brand-color-primary;
+    &:hover{
+        background: $brand-color-primary !important;
+        color: $white !important;
+        border: 1px solid $brand-color-primary;
+    }
+}
+.delete-btn-red{
+    background: $light-red;
+    color:$white;
+    font-size: $font-size-medium;
+    &:hover,&:focus,&:active{
+        background: darken($light-red,20%) !important;
+        color:$white !important;
+    }
+}
+.gray-button{
+    background: $gray-300;
+    color: $gray-600;
+    border:none;
+    outline: none;
+    &:hover,&:focus,&:active{
+        background: darken($gray-300,10%) !important;
+        color:$gray-600 !important;
+        border:none;
+        outline: none;
+    }
+}
+.run-workflow-button{
+    position: relative;
+    padding-right: 36px !important;
+    background: rgb(28,191,123);
+    background: -moz-linear-gradient(180deg, rgba(28,191,123,1) 0%, rgba(2,150,88,1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(28,191,123,1) 0%, rgba(2,150,88,1) 100%);
+    background: linear-gradient(180deg, rgba(28,191,123,1) 0%, rgba(2,150,88,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1cbf7b",endColorstr="#029658",GradientType=1);
+    border:1px solid #029658;
+    .play-icon{
+        position: absolute;
+        top: -1px;
+        left: 46px;
+    }
+    &:hover{
+
+        border:1px solid #029658;
+    }
+}
+.btn-md{
+    font-size: $font-size-medium;
+}
+.btn-sm{
+    font-size: $font-size-small;
+}
+.remove-operation{
+    width: 100%;
+    background: $lighterskyblue;
+    position: absolute;
+    bottom: 50px;
+    left: 160px;
+    width: 400px;
+    font-size: $font-size-small;
+    padding: 1px;
+    border-radius: 0px;
+    border:none;
+    &:hover,&:focus,&:active{
+        background:$light-red !important;
+        color: $white !important;
+    }
+}

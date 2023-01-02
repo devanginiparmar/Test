@@ -1,0 +1,214 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
+*/
+/*
+    Created on : Dec 9, 2022, 3:21:13 PM
+    Author     : MJohn
+*/
+
+// header{
+//     height:50px;
+//     border-bottom: 1px solid $gray-200;
+//     box-shadow: 0px 4px 12px $gray-200;
+//     display: flex;
+//     align-items: center;
+//     background: $white;
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     left: 0;
+//     z-index: 100;
+// }
+// .zevaluate-logo{
+//     width: 294px;
+//     border-right: 1px solid $gray-200;
+//     padding: 5px 0px;
+//     position: relative;
+//     z-index: 100;
+// }
+// .logo{
+//     max-height: 40px;
+// }
+// .general-dropdown{
+//     .dropdown-menu{
+//         background: $brand-color-primary;
+//         color:$white;
+//         border-radius: 0px;
+//         position: relative;
+//         padding-top:40px;
+//         right: 78px !important;
+//         transform: none !important;
+//         top: 45px !important;
+//         left: auto!important;
+//         li{
+
+//             a{
+//                 color:$white;
+//                 font-size: $font-size-medium;
+//                 padding: 8px 50px 8px 20px;
+//                 &:hover{
+//                     background: darken( $brand-color-primary,10%);
+//                 }
+//             }
+//             &:first-child{
+//                 position: absolute;
+//                 left:15px;
+//                 top: 15px;
+//                 text-transform: uppercase;
+//                 font-size: $font-size-small;
+//             }
+//         }
+//     }
+//     a{
+//         display: flex;
+//         align-items: center;
+//     }
+//     .dropdown-toggle::after{
+//         border:none;
+//     }
+//     .general-dropdown-arrow{
+//         line-height: 0;
+//         margin: 0;
+//         padding: 0;
+//         padding-left: 5px;
+//         width: 20px;
+//         height: 12px;
+//     }
+// }
+.header-right-side-menu{
+    display: flex;
+    justify-self:flex-end;
+    ul{
+        margin-bottom: 0px;
+        li{
+            float: left;
+
+            cursor: pointer;
+            font-size: $h5-font-size;
+            color:$gray-500;
+
+            .right-side-menu-items{
+                width:40px;
+                height:40px;
+                font-family: inherit;
+                font-size: inherit;
+                border-radius: 4px;
+                display: block;
+                text-align: center;
+                line-height: 40px;
+                .header-right-side-menu-icons{
+                    font-size: $h5-font-size;
+                }
+
+                &:hover{
+                    background: $gray-100;
+                    color:$black;
+                }
+            }
+        }
+    }
+    .user-avtaar{
+        position: relative;
+        padding-left: 42px;
+        font-size: $font-size-medium;
+        a{
+            font-size: inherit;
+            display: flex;
+            align-items: center;
+            color:$gray-600;
+            &.dropdown-toggle::after{
+                border: none;
+            }
+            &:hover{
+                color:$black;
+            }
+        }
+    }
+    .user-image{
+        width: 36px;
+        height:36px;
+        background: $gray-200;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        left:0px;
+        top:-7px;
+        line-height: 36px;
+        text-align: center;
+        font-size: $font-size-medium;
+        overflow: hidden;
+        &.light-green{
+            background: $light-green;
+            color: #fff;
+            font-weight: 600;
+        }
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+    .user-profile{
+        li{
+            float: none;
+            font-size: $font-size-medium;
+        }
+    }
+    .formula-icon{
+        font-style: italic;
+        font-family: "Georgia",sans-serif !important;
+        position: relative;
+        top: -2px;
+        font-size: $h5-font-size;
+        &::after{
+            top: 3px;
+            position: relative;
+        }
+
+    }
+    .formula-dropdown{
+
+
+        position: relative;
+        min-width: 300px;
+        padding-top: 38px;
+        li{
+            float: none;
+            border-bottom: 1px solid $gray-200;
+            font-size: $font-size-small;
+            &:last-child{
+                border-bottom: none;
+            }
+            a{
+                font-size: $font-size-small;
+                padding-right: 50px;
+                position: relative;
+                
+            }
+        }
+        .formula-dropdown-header{
+            position: absolute;
+            top: 0px;
+            background: $gray-200;
+            width: 100%;
+            padding: 8px;
+            font-size: $font-size-small;
+        }
+        .formula-info-icon{
+            position: absolute;
+            right: 10px;
+            top: 2px;
+            cursor: pointer;
+        }
+        .formula-dropdown-variable-list{
+            overflow: auto;
+            max-height: calc(100vh - 150px);
+        }
+    }
+
+}
+.formula-tooltip{
+    .tooltip-inner{
+        font-size: $font-size-small !important;
+    }
+}

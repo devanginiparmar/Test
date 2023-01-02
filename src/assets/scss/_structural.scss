@@ -1,0 +1,219 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
+*/
+/*
+    Created on : Dec 8, 2022, 12:23:25 PM
+    Author     : MJohn
+*/
+
+.pos_left_top{
+    position: absolute;
+    left:10px;
+    top:10px;
+}
+.pos_right_top{
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+.pos_bottom_center{
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(-50% );
+}
+.main-content{
+    margin-left: 302px;
+    padding-top:50px;
+    &.left-sidebar-only{
+        margin-left: 70px;
+    }
+    &.secondary-sidebar-collapsed{
+        margin-left: 82px;
+    }
+
+
+}
+.gray-bg{
+    background: $gray-100;
+    min-height: calc(100vh - 50px);
+
+}
+// .canvas{
+//     background:url('../assets/images/canvas-bg.png');
+//     background-size: 12px;
+//     min-height: calc(100vh - 50px);
+
+// }
+.create-new-wflow-block{
+    width:360px;
+    height: 220px;
+    border: 1px solid $gray-200;
+    padding: 16px;
+    background: $white;
+    border-radius: 6px;
+    margin-right: 12px;
+    /*    line-height: 200px;*/
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: $font-size-medium;
+    cursor: pointer;
+    transition:all .65s;
+    margin-bottom: 12px;
+    .new-workflow-icon{
+        color: #899fcb;
+    }
+    label{
+        font-size:inherit;
+        color: #899fcb;
+    }
+    &:hover{
+
+        box-shadow: 0px 0px 32px $gray-300;
+        .new-workflow-icon{
+            transition:all .65s;
+            color: #3c5995
+        }
+        label{
+            transition:all .65s;
+            color: #3c5995
+        }
+    }
+}
+.existing-wflow-block{
+    width:360px;
+    height: 220px;
+    border: 1px solid $light-gray;
+    padding: 16px;
+    background: $lighter-gray;
+    border-radius: 6px;
+    margin-right: 12px;
+    position: relative;
+    transition:all .65s;
+    margin-bottom: 12px;
+    cursor: pointer;
+    .workflow-details{
+        height:56px;
+        width: 100%;
+        position: absolute;
+        background: $white;
+        bottom: 0px;
+        left: 0px;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+    }
+    &:hover{
+        box-shadow: 0px 0px 32px $gray-300;
+    }
+    .workflow_name{
+        font-size: $font-size-sm;
+    }
+    .author_name{
+        font-size: $font-size-small;
+        color: $gray-500;
+    }
+    .workflow_status{
+        font-size: $font-size-small;
+        color: $gray-500;
+    }
+    .workflow-name-author{
+        min-width: 50%;
+    }
+    .workflow-edit-status{
+        min-width: 50%;
+        text-align: right;
+    }
+    .workflow-block-options{
+        position: absolute;
+        right: -10px;
+        top:50%;
+        transform: translateY(-50%);
+        z-index: 55;
+        .dropdown-toggle{
+            &::after{
+                border:none;
+            }
+        }
+        .workflow-block-options-items{
+            li{
+                a{
+                    font-size: $font-size-small;
+                    display: flex;
+                    align-items: center;
+                    &:focus,&:active{
+                        background: $brand-color-primary;
+                        color: $white;
+                    }
+                }
+            }
+
+        }
+    }
+}
+.three-dots-dropdown{
+    .dropdown-toggle{
+        &::after{
+            border:none;
+        }
+    }
+    .workflow-block-options-items{
+        li{
+            a{
+                font-size: $font-size-small;
+                display: flex;
+                align-items: center;
+                &:active, &:focus{
+                    background: $brand-color-primary !important;
+                }
+            }
+        }
+
+    }
+}
+.context-menu-icons{
+    max-height: 22px;
+}
+.circled-delete-file-icon{
+    width:60px;
+    height: 60px;
+    border:1px solid $common-gray;
+    background: $white;
+    text-align: center;
+    line-height: 60px;
+    display: inline-block;
+    border-radius: 50%;
+    .icon-trash{
+        color: $common-gray;
+    }
+}
+.modal-message{
+    h6{
+        line-height: 24px;
+    }
+}
+
+/*Dataset*/
+.empty_dataset_icon{
+    max-height: 70px;
+}
+.dataset-list-edit{
+    font-size: $font-size-small;
+    li{
+        font-size: inherit;
+        cursor: pointer;
+        &:hover,&.active{
+            background: $gray-100;
+            font-weight: 600;
+            color: $black;
+            border-bottom: 1px solid $gray-600 !important;
+        }
+
+    }
+}
+.medium-icon-size{
+
+    max-height: 56px;
+
+}

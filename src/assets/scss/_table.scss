@@ -1,0 +1,71 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
+*/
+/*
+    Created on : Dec 14, 2022, 3:48:12 PM
+    Author     : MJohn
+*/
+
+table{
+    th{
+        font-weight: 600;
+        font-size: $font-size-medium;
+    }
+}
+.workflow-table{
+    th{
+        font-size: $font-size-small;
+        color: $gray-600;
+        font-weight: 700;
+        text-transform: uppercase;
+        > span{
+            position: relative;
+            padding-right: 20px;
+            font-size: inherit;
+            display: inline-block;
+            .sort-arrow-up{
+                background: url(../assets/images/caret-up.svg);
+                background-repeat: no-repeat;
+                position: absolute;
+                right: 0px;
+                top:-3px;
+                cursor: pointer;
+                width: 14px;
+                height: 14px;
+                background-size: 100%;
+                opacity: .5;
+                &:hover{
+                    background: url(../assets/images/caret-up-fill.svg);
+                    background-repeat: no-repeat;
+                     background-size: 100%;
+                      opacity: 1;
+                }
+            }
+            .sort-arrow-down  {
+                background: url(../assets/images/caret-down.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                position: absolute;
+                width: 14px;
+                height: 14px;
+                right: 0px;
+                top:7px;
+                cursor: pointer;
+                 opacity: .5;
+                &:hover{
+                    background: url(../assets/images/caret-down-fill.svg);
+                    background-repeat: no-repeat;
+                     background-size: 100%;
+                      opacity: 1;
+                }
+            }
+        }
+
+    }
+    td{
+        font-size: $font-size-medium;
+        background: $white;
+        vertical-align: middle;
+    }
+}

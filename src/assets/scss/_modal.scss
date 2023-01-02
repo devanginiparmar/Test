@@ -1,0 +1,27 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
+*/
+/*
+    Created on : Dec 14, 2022, 3:11:29 PM
+    Author     : MJohn
+*/
+
+.zevaluate-modal{
+    .modal-header{
+        background: $lighterskyblue;
+        padding: 12px;
+        h1{
+            font-size: $font-size-base;
+            font-weight: $font-weight-semibold;
+        }
+        .btn-close{
+            width: 16px;
+            height: 16px;
+            background-size: 12px;
+        }
+    }
+    .modal-footer{
+        padding: 8px;
+    }
+}

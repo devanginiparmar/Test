@@ -1,0 +1,32 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/style.scss to edit this template
+*/
+/*
+    Created on : Dec 8, 2022, 12:07:57 PM
+    Author     : MJohn
+*/
+@import "variables";
+@import "components";
+@import "buttons";
+@import "colors";
+@import "footer";
+//@import "login";
+//@import "header";
+//@import "left-sidebar";
+//@import "left-secondary-sidebar";
+@import "structural";
+@import "mixins";
+@import "typography";
+@import "configurations";
+@import "modal";
+@import "table";
+@import "utilities";
+
+
+*,html,body{
+    font-family: $font-family-sans-serif;
+    font-size: 16px;
+    font-size:$font-size-base;
+    // color: black;
+}
